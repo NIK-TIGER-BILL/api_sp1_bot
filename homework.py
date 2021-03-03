@@ -25,7 +25,6 @@ def parse_homework_status(homework):
 
 
 def get_homework_statuses(current_timestamp):
-    current_timestamp = 0
     homework_statuses = requests.get(
         API_YANDEX_URL,
         headers={'Authorization': f'OAuth {PRAKTIKUM_TOKEN}'},
