@@ -9,9 +9,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 logging.basicConfig(
-        level=logging.DEBUG,
-        filename='main.log',
-        format='%(asctime)s, %(levelname)s, %(message)s, %(name)s')
+    level=logging.DEBUG,
+    filename='main.log',
+    format='%(asctime)s, %(levelname)s, %(message)s, %(name)s')
 logger = logging.getLogger('__name__')
 logger.setLevel(logging.INFO)
 handler = RotatingFileHandler('my_logger.log', maxBytes=50000000,
