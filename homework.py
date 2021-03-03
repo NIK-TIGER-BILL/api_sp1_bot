@@ -36,7 +36,6 @@ def parse_homework_status(homework):
                    'можно приступать к следующему уроку.')
     else:
         return f'Работа {homework_name} взята на проверку'
-
     return f'У вас проверили работу "{homework_name}"!\n\n{verdict}'
 
 
