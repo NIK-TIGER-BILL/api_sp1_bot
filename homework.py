@@ -46,7 +46,7 @@ def get_homework_statuses(current_timestamp):
             headers={'Authorization': f'OAuth {PRAKTIKUM_TOKEN}'},
             params={'from_date': current_timestamp})
         return homework_statuses.json()
-    except:
+    except Exception:
         logger.exception('Ошибка при запросе к API')
         return None
 
