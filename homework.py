@@ -48,6 +48,7 @@ def get_homework_statuses(current_timestamp):
         return homework_statuses.json()
     except:
         logger.exception('Ошибка при запросе к API')
+        return None
 
 
 def send_message(message, bot_client):
