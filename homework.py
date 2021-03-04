@@ -40,11 +40,14 @@ def parse_homework_status(homework):
 
 
 def get_homework_statuses(current_timestamp):
-    homework_statuses = requests.get(
-        API_YANDEX_URL,
-        headers={'Authorization': f'OAuth {PRAKTIKUM_TOKEN}'},
-        params={'from_date': current_timestamp})
-    return homework_statuses.json()
+    try:
+        homework_statuses = requests.get(
+            API_YANDEX_URL,
+            headers={'Authorization': f'OAuth {PRAKTIKUM_TOKEN}'},
+            params={'from_date': current_timestamp})
+        return homework_statuses.json()
+    except:
+        logger.exception('Ошибка при запросе к API')
 
 
 def send_message(message, bot_client):
