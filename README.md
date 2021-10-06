@@ -1,2 +1,4 @@
-# api_sp1_bot
-api sp1 bot
+# telegram-bot-yandex-practikum
+Данный бот оповещает пользователя о проверенной работе.
+
+
