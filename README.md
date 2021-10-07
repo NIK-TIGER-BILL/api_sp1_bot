@@ -1,15 +1,17 @@
 # telegram-bot-yandex-practikum  
 [![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
-[![GitHub%20Actions](https://img.shields.io/badge/-GitHub%20Actions-464646?style=flat-square&logo=GitHub%20actions)](https://github.com/features/actions)
 [![Telegram](https://img.shields.io/badge/-Telegram-464646?style=flat-square&logo=Telegram)](https://pypi.org/project/python-telegram-bot/)
+[![Heroku](https://img.shields.io/badge/-Heroku-464646?style=flat-square&logo=Heroku)](https://www.heroku.com/)
 
 Данный бот оповещает пользователя о проверенной работе. В случаи ошибки, пришлет исключение сообщением в чат.
-
+Его я распологал на бесплатном сервисе [Heroku](https://www.heroku.com/). Для этого в репозитории уже лежить Procfile. Вы можете выбрать любой другой удобный для вас.
 
 Переменные окружения. Создайте файл с названием ".env" и занесите туда переменные:  
 * `API_YANDEX_URL`  url адрес сервера api яндекс практикума
 * `PRAKTIKUM_TOKEN` токен аутентификации Яндекс.Практикума
 * `TELEGRAM_TOKEN`  телеграмм токен созданного вами бота
 * `CHAT_ID`         id чата с вами
+
+*Токен можно получить по адресу: https://oauth.yandex.ru/authorize?response_type=token&client_id=<client_id>, где client_id, id пользователя*
 
 
