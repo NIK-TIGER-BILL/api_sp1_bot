@@ -1,4 +1,8 @@
-# telegram-bot-yandex-practikum
+# telegram-bot-yandex-practikum  
+[![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
+[![GitHub%20Actions](https://img.shields.io/badge/-GitHub%20Actions-464646?style=flat-square&logo=GitHub%20actions)](https://github.com/features/actions)
+[![Telegram](https://img.shields.io/badge/-Telegram-464646?style=flat-square&logo=Telegram)](https://pypi.org/project/python-telegram-bot/)
+
 Данный бот оповещает пользователя о проверенной работе. В случаи ошибки, пришлет исключение сообщением в чат.
 
 
